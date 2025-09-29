@@ -6,42 +6,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact|SweetCrumbs Bakery</title>
   <link rel="stylesheet" href="contact.css" />
+  <link rel="icon" type="image/png" href="/Images/logoSC.png">
 </head>
 <body>
 
     
-  <header>
-    <h1>SweetCrumbs Bakery</h1>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img src="/Images/logoSC.png" alt="SweetCrumbs Bakery Logo" class="logo-img">
+        <div>
+          <div class="brand-name">SweetCrumbs Bakery</div>
+          <div class="tagline">Freshly baked happiness, every day</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
 
-  <section class="hero">
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+   <!-- Hero Image -->
+   <section id="about-hero">
+    <img src="/Images/hero5.jpg" alt="SweetCrumbs Bakery" class="hero-image">
+  </section>
+
+ 
+  <div class="contact-container">
     <h2>Contact Us</h2>
-    <p>[Hero Image Placeholder]</p>
-  </section>
+    <p>We’d love to hear from you! Please fill out the form below or visit us.</p>
 
-  <section class="contact"> // contact form with button 
-    <h2>Get In Touch</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required><br>
-      <input type="email" placeholder="Your Email" required><br>
-      <textarea rows="5" placeholder="Your Message"></textarea><br>
-      <button type="submit">Send</button>
+    <!-- Google Map -->
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.123456789!2d18.424055!3d-33.924869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcdb123456789%3A0xabcdef123456789!2sSweetCrumbs%20Bakery!5e0!3m2!1sen!2sza!4v1695912345678!5m2!1sen!2sza" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <!-- Contact Form -->
+    <form action="#" method="POST" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
     </form>
-  </section>
+  </div>
 
-  <section class="map"> // map for locations
-    <h2>Find Us</h2>
-    <p>[Map Placeholder]</p>
-  </section>
+
 
   <footer>
-    <p>© 2025 SweetCrumbs Bakery</p>
+    <div class="footer-container">
+      <!-- Left: Logo + tagline -->
+      <div class="brand">
+        <img src="/Images/logoSC.png" alt="SweetCrumbs Bakery Logo" class="logo-img">
+        <div>
+          <div class="brand-name">SweetCrumbs Bakery</div>
+          <div class="tagline">Freshly baked happiness, every day</div>
+        </div>
+      </div>
+      <!-- Middle: Quick links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Right: Contact info -->
+      <div class="footer-contact">
+        <h4>Get in Touch</h4>
+        <p>123 Sweet Street, Cape Town</p>
+        <p>📞 (021) 555-1234</p>
+        <p>📧 hello@sweetcrumbs.co.za</p>
+        <div class="socials">
+          <a href="#"><img src="/Images/face.png" alt="Facebook"></a>
+          <a href="#"><img src="/Images/inst.png" alt="Instagram"></a>
+          <div class="twitter">
+          <a href="#"><img src="/Images/X.png" alt="Twitter"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <p>© 2025 SweetCrumbs Bakery. All Rights Reserved.</p>
+    </div>
   </footer>
 
   

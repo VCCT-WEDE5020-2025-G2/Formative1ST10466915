@@ -1,0 +1,349 @@
+/* about.css */
+
+:root {
+    --brand-orange: #f59e0b;
+    --brand-deep: #0f172a;
+    --muted: #6b7280;
+    --card-bg: #fff;
+    --page-bg: #fbfaf8;
+    --max-w: 1100px;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background: var(--page-bg);
+    color: var(--brand-deep);
+    line-height: 1.45;
+  }
+  
+  .container {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 28px;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .logo-img {
+    width: 60px;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .brand-name {
+    font-weight: 700;
+  }
+  
+  .tagline {
+    font-size: 13px;
+    color: var(--muted);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    color: var(--brand-deep);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333; /* Dark Gray text */
+    line-height: 1.6;
+    background-color: #FFFFFF; /* default page background */
+  }
+  
+  /* Hero Image */
+  .hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 5px solid #8B4513; /* Caramel Brown accent */
+  }
+  
+  /* Section Base */
+  section {
+    padding: 80px 20px 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Section Backgrounds */
+  .section-white {
+    background-color: #FFFFFF;
+  }
+  
+  .section-cream {
+    background-color: #FFF5E6; /* Warm Cream */
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4 {
+    font-family: 'Pacifico', cursive;
+    color: #8B4513; /* Caramel Brown for headings */
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  /* Paragraphs & Lists */
+  p, li {
+    font-family: 'Open Sans', sans-serif;
+    color: #333333; /* Dark Gray */
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* Team Section */
+  .team-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1100px;
+  }
+  
+  .team-member {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .team-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #8B4513; /* Caramel Brown */
+    flex-shrink: 0;
+  }
+  
+  .team-info h3 {
+    font-family: 'Playfair Display', serif; /* accent font */
+    color: #5C3A21; /* Chocolate Brown for team names */
+    margin-bottom: 5px;
+  }
+  
+  .team-info p {
+    font-size: 0.95rem;
+    color: #666666; /* Medium Gray */
+  }
+  
+  /* Values Section */
+  .values-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+    max-width: 1100px;
+  }
+  
+  .values-text {
+    flex: 1;
+  }
+  
+  .values-text ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+  }
+  
+  .values-image {
+    flex: 1;
+  }
+  
+  .values-image img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Call to Action */
+  #cta {
+    text-align: left;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    max-width: 1100px;
+  }
+  
+  .cta-button {
+    background-color: #8B4513; /* Caramel Brown button */
+    color: #FFFFFF; /* White text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #C0392B; /* Berry Red hover */
+  }
+  
+  /* Accent colors for highlights (optional) */
+  .highlight-olive {
+    color: #708238;
+  }
+  
+  .highlight-pink {
+    color: #F4C2C2;
+  }
+
+  footer {
+    background-color: #4A2C2A; /* Chocolate Brown */
+    color: #FFF8F0; /* Warm Cream */
+    padding: 40px 20px 10px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 50px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+  
+  /* Brand section */
+  .footer-brand {
+    max-width: 250px;
+  }
+  
+  .footer-logo {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .tagline {
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+    color: #E8A0B3; /* Soft Rose Pink */
+  }
+  
+  /* Links */
+  .footer-links h4,
+  .footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #FFF8F0;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    color: #FFF8F0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #B23A48; /* Berry Red */
+  }
+  
+  /* Contact */
+  .footer-contact p {
+    margin: 5px 0;
+  }
+  
+  .socials a {
+    margin-right: 10px;
+    display: inline-block;
+  
+  }
+  
+  .socials img {
+    width: 50px;
+    height: 50px;
+    filter: invert(100%); /* makes icons white */
+    transition: filter 0.3s ease;
+  }
+  
+  .socials img:hover {
+    filter: invert(50%) sepia(100%) saturate(400%) hue-rotate(-20deg);
+  }
+  
+  .twitter {
+    width: 38px;
+    height: 35px;
+    filter: invert(100%); /* makes icons white */
+    transition: filter 0.3s ease;
+  }
+  
+  .twitter:hover {
+    filter: invert(50%) sepia(100%) saturate(400%) hue-rotate(-20deg);
+  }
+  
+  .twitter {
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  /* Bottom bar */
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 15px 0 5px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .values-container, .team-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .values-image img, .team-avatar {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .values-text ul {
+      text-align: center;
+    }
+  }
+
+
+  

@@ -6,38 +6,156 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About|SweetCrumbs Bakery</title>
   <link rel="stylesheet" href="about.css" />
-
+  <link rel="icon" type="image/png" href="/Images/logoSC.png">
 </head>
 <body>
 
-  <header>
-    <h1>SweetCrumbs Bakery</h1>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img src="/Images/logoSC.png" alt="SweetCrumbs Bakery Logo" class="logo-img">
+        <div>
+          <div class="brand-name">SweetCrumbs Bakery</div>
+          <div class="tagline">Freshly baked happiness, every day</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
 
-  <section class="hero"> // image with button
-    <h2>Our Story</h2>
-    <p>[Hero Image Placeholder]</p>
-  </section>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <section class="history"> // example of history
-    <h2>History</h2>
-    <p>SweetCrumbs started as a small family bakery bringing joy through freshly baked treats.</p>
-  </section>
+    
 
-  <section class="mission"> // example of history
-    <h2>Our Mission</h2>
-    <p>To spread happiness with every crumb.</p>
-  </section>
+    
+    
+    <!-- Hero Image -->
+    <section id="about-hero">
+      <img src="/Images/hero3.jpg" alt="SweetCrumbs Bakery" class="hero-image">
+    </section>
+    
+<!-- History / Story -->
+<section id="history" class="section-cream">
+  <h2>Our Story</h2>
+  <p>
+    SweetCrumbs Bakery opened its doors in 2025 with a simple mission: to create freshly baked goods that bring joy to every moment. 
+    From our very first batch of cupcakes to our beautifully crafted cakes, everything is made with love, care, and the finest ingredients. 
+    Even as a new bakery, we’ve already started building a community of happy customers who share our passion for quality and delicious treats. 
+    Every pastry we bake reflects our dedication to making SweetCrumbs a place where people can celebrate, connect, and enjoy the sweet things in life.
+  </p>
+</section>
 
-  <footer>
-    <p>© 2025 SweetCrumbs Bakery</p>
-  </footer>
+<!-- Our Values -->
+<section id="values" class="section-white">
+  <h2>Our Values</h2>
+  <div class="values-container">
+    <div class="values-text">
+      <ul>
+        <li><strong>Quality Ingredients:</strong> Only the finest ingredients make it into our bakery.</li>
+        <li><strong>Passion & Craft:</strong> Every item is handmade with care.</li>
+        <li><strong>Community First:</strong> Giving back and creating a welcoming space for everyone.</li>
+      </ul>
+    </div>
+    <div class="values-image">
+      <img src="/Images/bake.jpg" alt="Fresh Ingredients">
+    </div>
+  </div>
+</section>
+
+    <!-- Our Mission -->
+    <section id="our-mission" class="section-cream">
+      <h2>Our Mission</h2>
+      <p>
+        At SweetCrumbs Bakery, our mission is to bring joy through freshly baked goods made with love and care. 
+        We believe in using the finest ingredients to create treats that delight every sense, from the first bite to the last. 
+        Our goal is not just to bake, but to create moments of happiness for families, friends, and our community. 
+        We are committed to maintaining a welcoming environment where everyone feels like part of the SweetCrumbs family.
+      </p>
+    </section>
+    
+    <!-- Meet the Team -->
+    <section id="meet-the-team" class="section-white">
+      <h2>Meet the Team</h2>
+      <div class="team-container">
+        <div class="team-member">
+          <img src="images/team1.jpg" alt="Jane Doe" class="team-avatar">
+          <div class="team-info">
+            <h3>Jane Doe</h3>
+            <p>Head Baker – Passionate about creating delightful pastries and cakes.</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="images/team2.jpg" alt="John Smith" class="team-avatar">
+          <div class="team-info">
+            <h3>John Smith</h3>
+            <p>Customer Experience – Ensuring every visit is warm and welcoming.</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="images/team3.jpg" alt="Sophia Lee" class="team-avatar">
+          <div class="team-info">
+            <h3>Sophia Lee</h3>
+            <p>Creative Designer – Bringing beautiful designs to every cake and treat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section id="cta" class="section-cream">
+      <p>Ready to taste the magic? <a href="Menu.html" class="cta-button">View Our Menu</a></p>
+    </section>
+    
+    
+    <footer>
+      <div class="footer-container">
+        <!-- Left: Logo + tagline -->
+        <div class="brand">
+          <img src="/Images/logoSC.png" alt="SweetCrumbs Bakery Logo" class="logo-img">
+          <div>
+            <div class="brand-name">SweetCrumbs Bakery</div>
+            <div class="tagline">Freshly baked happiness, every day</div>
+          </div>
+        </div>
+        <!-- Middle: Quick links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+    
+        <!-- Right: Contact info -->
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <p>123 Sweet Street, Cape Town</p>
+          <p>📞 (021) 555-1234</p>
+          <p>📧 hello@sweetcrumbs.co.za</p>
+          <div class="socials">
+            <a href="#"><img src="/Images/face.png" alt="Facebook"></a>
+            <a href="#"><img src="/Images/inst.png" alt="Instagram"></a>
+            <div class="twitter">
+            <a href="#"><img src="/Images/X.png" alt="Twitter"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <p>© 2025 SweetCrumbs Bakery. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+
   
   
 </body>
