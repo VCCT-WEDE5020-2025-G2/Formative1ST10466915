@@ -6,30 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home|SweetCrumbs Bakery</title>
   <link rel="stylesheet" href="Home.css" />
-  <link rel="icon" type="image/png" href="/Images/logoSC.png">
+  <link rel="icon" type="image/png" href="Images/logoSC.png">
 </head>
 <body>
 
+   <header>
+  <div class="header-content">
+    <div class="brand">
+      <img src="Images/logoSC.png" alt="Logo" class="logo-img">
+      <div>
+        <div class="brand-name">SweetCrumbs Bakery</div>
+        <div class="tagline">Freshly baked happiness, every day</div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
   <div class="container">
     
-    <header>
-      <div class="brand">
-        <img src="/Images/logoSC.png" alt="SweetCrumbs Bakery Logo" class="logo-img">
-        <div>
-          <div class="brand-name">SweetCrumbs Bakery</div>
-          <div class="tagline">Freshly baked happiness, every day</div>
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
+   
 
-          <li><a href="Menu.html">Menu</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
   
     <!-- HERO -->
     <section class="hero" id="home">
@@ -37,12 +41,13 @@
         <h1>Welcome to SweetCrumbs Bakery</h1>
         <p>Freshly baked breads, pastries, and cakes made with love every single day. Come taste the difference.</p>
         <div class="cta-row">
-          <button class="btn btn-primary" >View Menu</a></button>
-          <button class="btn btn-ghost">Order Online</button>
+         <a href="menu.html" class="btn btn-primary">View Menu</a>
+<a href="menu.html" class="btn btn-ghost">Order Online</a>
+
         </div>
       </div>
       <aside>
-        <img src="/Images/hero2.jpg" alt="Hero image" class="hero-image">
+        <img src="Images/hero2.jpg" alt="Hero image" class="hero-image">
       </aside>
     </section>
 
@@ -51,17 +56,18 @@
       <h2>Our Specials</h2>
       <div class="grid">
         <article class="card">
-          <div class="product-thumb" style="background-image:url('/Images/bc.jpg');"></div>
-          <div>
-            <div class="product-title">Buttery Croissant</div>
-            <div class="product-desc">Flaky and golden</div>
-            <div class="price">R18</div>
-          </div>
-        </article>
+  <img src="Images/bc.jpg" alt="Buttery Croissant" class="product-thumb">
+  <div class="card-content">
+    <div class="product-title">Buttery Croissant</div>
+    <div class="product-desc">Flaky and golden</div>
+    <div class="price">R18</div>
+  </div>
+</article>
+
 
         <article class="card">
-          <div class="product-thumb" style="background-image:url('/Images/vanC.jpeg');"></div>
-          <div>
+           <img src="Images/vanC.jpeg" alt="vanilla" class="product-thumb">
+          <div class="card-content">
             <div class="product-title">Vanilla Celebration Cake</div>
             <div class="product-desc">Perfect for birthdays</div>
             <div class="price">From R350</div>
@@ -69,8 +75,8 @@
         </article>
 
         <article class="card">
-          <div class="product-thumb" style="background-image:url('/Images/loaf.jpg');"></div>
-          <div>
+          <img src="Images/loaf.jpg" alt="loaf" class="product-thumb">
+          <div class="card-content">
             <div class="product-title">Seeded Loaf</div>
             <div class="product-desc">Wholesome & hearty</div>
             <div class="price">R38</div>
@@ -84,15 +90,15 @@
 <section id="testimonials">
   <h2>What Our Customers Say</h2>
   <div class="testimonial-card">
-    <img src="images/emily.jpg" alt="Emily R." class="testimonial-avatar">
+    <img src="Images/em.jpg" alt="Emily R." class="testimonial-avatar">
     <p>"The cupcakes are absolutely divine! SweetCrumbs never disappoints." – <strong>Emily R.</strong></p>
   </div>
   <div class="testimonial-card">
-    <img src="images/john.jpg" alt="John S." class="testimonial-avatar">
+    <img src="Images/jo.jpg" alt="John S." class="testimonial-avatar">
     <p>"I love the friendly service and the quality of their bread is unmatched!" – <strong>John S.</strong></p>
   </div>
   <div class="testimonial-card">
-    <img src="images/sophia.jpg" alt="Sophia L." class="testimonial-avatar">
+    <img src="Images/soph.jpg" alt="Sophia L." class="testimonial-avatar">
     <p>"Every cake I've ordered here has been perfect. Highly recommend!" – <strong>Sophia L.</strong></p>
   </div>
 </section>
@@ -102,7 +108,7 @@
   <div class="footer-container">
     <!-- Left: Logo + tagline -->
     <div class="brand">
-      <img src="/Images/logoSC.png" alt="SweetCrumbs Bakery Logo" class="logo-img">
+      <img src="Images/logoSC.png" alt="SweetCrumbs Bakery Logo" class="logo-img">
       <div>
         <div class="brand-name">SweetCrumbs Bakery</div>
         <div class="tagline">Freshly baked happiness, every day</div>
@@ -112,10 +118,10 @@
     <div class="footer-links">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="home.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="menu.html">Menu</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
 
@@ -126,11 +132,9 @@
       <p>📞 (021) 555-1234</p>
       <p>📧 hello@sweetcrumbs.co.za</p>
       <div class="socials">
-        <a href="#"><img src="/Images/face.png" alt="Facebook"></a>
-        <a href="#"><img src="/Images/inst.png" alt="Instagram"></a>
-        <div class="twitter">
-        <a href="#"><img src="/Images/X.png" alt="Twitter"></a>
-        </div>
+        <a href="#"><img src="Images/face.png" alt="Facebook"></a>
+        <a href="#"><img src="Images/inst.png" alt="Instagram"></a>
+        
       </div>
     </div>
   </div>
@@ -145,7 +149,8 @@
   
     
      
-  
+  <script src="home.js"></script>
+
 
 </body>
 </html>

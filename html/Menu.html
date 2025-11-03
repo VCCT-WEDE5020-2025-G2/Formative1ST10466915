@@ -6,102 +6,125 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menu|SweetCrumbs Bakery</title>
   <link rel="stylesheet" href="menu.css" />
-  <link rel="icon" type="image/png" href="/Images/logoSC.png">
+  <link rel="icon" type="image/png" href="Images/logoSC.png">
 </head>
 <body>
 
-  <div class="container">
-    <header>
-      <div class="brand">
-        <img src="/Images/logoSC.png" alt="SweetCrumbs Bakery Logo" class="logo-img">
-        <div>
-          <div class="brand-name">SweetCrumbs Bakery</div>
-          <div class="tagline">Freshly baked happiness, every day</div>
-        </div>
+
+     <header>
+  <div class="header-content">
+    <div class="brand">
+      <img src="Images/logoSC.png" alt="Logo" class="logo-img">
+      <div>
+        <div class="brand-name">SweetCrumbs Bakery</div>
+        <div class="tagline">Freshly baked happiness, every day</div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-          <li><a href="Menu.html">Menu</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <div class="container">
+    
+   <section id="about-hero">
+  <img src="Images/hero4.jpg" alt="SweetCrumbs Bakery" class="hero-image">
+  <div class="hero-content">
+    <h1>Welcome to SweetCrumbs Bakery</h1>
+    <p>Creating delicious moments with love and passion in every bite.</p>
+   
+  </div>
+</section>
 
-    <!-- Hero Image -->
-    <section id="about-hero">
-      <img src="/Images/hero4.jpg" alt="SweetCrumbs Bakery" class="hero-image">
-    </section>
   
 
-<!-- Cakes Section -->
+<!-- Filtered Menu Section -->
+
 <section class="menu-section">
-  <h2>Cakes</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="/Images/choc.jpg" alt="Chocolate Cake" class="product-thumb">
+  <h2>Our Menu</h2>
+
+  <!-- Filter Buttons -->
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="cakes">Cakes</button>
+    <button class="filter-btn" data-filter="pastries">Pastries</button>
+    <button class="filter-btn" data-filter="breads">Breads</button>
+  </div>
+
+  <!-- Menu Grid -->
+
+<section class="menu-section container">
+  <h2>Our Menu</h2>
+  <div class="grid menu-grid">
+
+    <!-- Cakes -->
+    <div class="card" data-item="Chocolate Cake" data-price="120">
+      <img src="Images/choc.jpg" alt="Chocolate Cake" class="product-thumb">
       <h3 class="product-title">Chocolate Cake</h3>
       <p class="product-desc">Rich and moist chocolate layers.</p>
       <p class="price">R120</p>
     </div>
-    <div class="card">
-      <img src="/Images/vanC.jpeg" alt="Vanilla Cake" class="product-thumb">
+
+    <div class="card" data-item="Vanilla Cake" data-price="110">
+      <img src="Images/vanC.jpeg" alt="Vanilla Cake" class="product-thumb">
       <h3 class="product-title">Vanilla Cake</h3>
       <p class="product-desc">Soft and fluffy with creamy frosting.</p>
       <p class="price">R110</p>
     </div>
-    <div class="card">
-      <img src="/Images/red.jpg" alt="Red Velvet Cake" class="product-thumb">
+
+    <div class="card" data-item="Red Velvet Cake" data-price="130">
+      <img src="Images/red.jpg" alt="Red Velvet Cake" class="product-thumb">
       <h3 class="product-title">Red Velvet Cake</h3>
       <p class="product-desc">Classic red velvet with cream cheese.</p>
       <p class="price">R130</p>
     </div>
-  </div>
-</section>
 
-<section class="menu-section">
-  <h2>Pastries</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="/Images/bc.jpg" alt="Croissant" class="product-thumb">
+    <!-- Pastries -->
+    <div class="card" data-item="Butter Croissant" data-price="25">
+      <img src="Images/bc.jpg" alt="Croissant" class="product-thumb">
       <h3 class="product-title">Butter Croissant</h3>
       <p class="product-desc">Flaky, buttery, fresh from the oven.</p>
       <p class="price">R25</p>
     </div>
-    <div class="card">
-      <img src="/Images/cin.jpg" alt="Cinnamon Roll" class="product-thumb">
+
+    <div class="card" data-item="Cinnamon Roll" data-price="30">
+      <img src="Images/cin.jpg" alt="Cinnamon Roll" class="product-thumb">
       <h3 class="product-title">Cinnamon Roll</h3>
       <p class="product-desc">Sweet and soft, with cinnamon swirls.</p>
       <p class="price">R30</p>
     </div>
-    <div class="card">
-      <img src="/Images/pain.jpg" alt="Pain au Chocolat" class="product-thumb">
+
+    <div class="card" data-item="Pain au Chocolat" data-price="28">
+      <img src="Images/pain.jpg" alt="Pain au Chocolat" class="product-thumb">
       <h3 class="product-title">Pain au Chocolat</h3>
       <p class="product-desc">Chocolate-filled pastry delight.</p>
       <p class="price">R28</p>
     </div>
-  </div>
-</section>
 
-<section class="menu-section">
-  <h2>Breads</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="/Images/sour.jpg" alt="Sourdough" class="product-thumb">
+    <!-- Breads -->
+    <div class="card" data-item="Sourdough Bread" data-price="45">
+      <img src="Images/sour.jpg" alt="Sourdough" class="product-thumb">
       <h3 class="product-title">Sourdough Bread</h3>
       <p class="product-desc">Crispy crust with soft center.</p>
       <p class="price">R45</p>
     </div>
-    <div class="card">
-      <img src="/Images/whole.jpg" alt="Whole Wheat Bread" class="product-thumb">
+
+    <div class="card" data-item="Whole Wheat Loaf" data-price="40">
+      <img src="Images/whole.jpg" alt="Whole Wheat Bread" class="product-thumb">
       <h3 class="product-title">Whole Wheat Loaf</h3>
       <p class="product-desc">Healthy and hearty for daily meals.</p>
       <p class="price">R40</p>
     </div>
-    <div class="card">
-      <img src="/Images/din.jpg" alt="Dinner Rolls" class="product-thumb">
+
+    <div class="card" data-item="Dinner Rolls" data-price="20">
+      <img src="Images/din.jpg" alt="Dinner Rolls" class="product-thumb">
       <h3 class="product-title">Dinner Rolls</h3>
       <p class="product-desc">Soft and golden, perfect for dinner.</p>
       <p class="price">R20</p>
@@ -111,11 +134,15 @@
 
 
 
+
+
+
+
 <footer>
   <div class="footer-container">
     <!-- Left: Logo + tagline -->
     <div class="brand">
-      <img src="/Images/logoSC.png" alt="SweetCrumbs Bakery Logo" class="logo-img">
+      
       <div>
         <div class="brand-name">SweetCrumbs Bakery</div>
         <div class="tagline">Freshly baked happiness, every day</div>
@@ -125,10 +152,10 @@
     <div class="footer-links">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="home.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="menu.html">Menu</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
 
@@ -139,11 +166,9 @@
       <p>📞 (021) 555-1234</p>
       <p>📧 hello@sweetcrumbs.co.za</p>
       <div class="socials">
-        <a href="#"><img src="/Images/face.png" alt="Facebook"></a>
-        <a href="#"><img src="/Images/inst.png" alt="Instagram"></a>
-        <div class="twitter">
-        <a href="#"><img src="/Images/X.png" alt="Twitter"></a>
-        </div>
+        <a href="#"><img src="Images/face.png" alt="Facebook"></a>
+        <a href="#"><img src="Images/inst.png" alt="Instagram"></a>
+        
       </div>
     </div>
   </div>
@@ -154,6 +179,6 @@
   </div>
 </footer>
 
-  
+  <script src="menu.js"></script>
 </body>
 </html>
