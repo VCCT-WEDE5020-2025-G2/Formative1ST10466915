@@ -1,19 +1,20 @@
-const filterBtns = document.querySelectorAll('.filter-btn');
-  const menuItems = document.querySelectorAll('.menu-grid .card');
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.card');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Remove active class from all buttons
-      filterBtns.forEach(b => b.classList.remove('active'));
+      
+      // activate button
+      document.querySelector('.filter-btn.active').classList.remove('active');
       btn.classList.add('active');
 
       const filter = btn.dataset.filter;
 
-      menuItems.forEach(item => {
-        if (filter === 'all' || item.dataset.category === filter) {
-          item.style.display = 'block';
+      cards.forEach(card => {
+        if (filter === "all" || card.classList.contains(filter)) {
+          card.style.display = "block";
         } else {
-          item.style.display = 'none';
+          card.style.display = "none";
         }
       });
     });

@@ -6,36 +6,31 @@ const totalItems = teamItems.length;
 
 let index = 0;
 
-// Get width of one item including gap
 function getItemWidth() {
   const style = window.getComputedStyle(teamItems[0]);
   const gap = parseInt(style.marginRight) || 30;
   return teamItems[0].offsetWidth + gap;
 }
 
-// Move carousel to index
 function moveCarousel() {
   const itemWidth = getItemWidth();
   track.style.transform = `translateX(-${itemWidth * index}px)`;
 }
 
-// Buttons
 nextBtn.addEventListener('click', () => {
-  index = (index + 1) % totalItems; // loop infinitely
+  index = (index + 1) % totalItems;
   moveCarousel();
 });
 
 prevBtn.addEventListener('click', () => {
-  index = (index - 1 + totalItems) % totalItems; // loop backwards
+  index = (index - 1 + totalItems) % totalItems;
   moveCarousel();
 });
 
-// Auto-slide every 4 seconds
+// Auto-slide every 5 seconds
 setInterval(() => {
   index = (index + 1) % totalItems;
   moveCarousel();
-}, 4000);
+}, 5000);
 
-// Responsive adjustment
 window.addEventListener('resize', moveCarousel);
-

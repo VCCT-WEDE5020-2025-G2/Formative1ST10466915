@@ -2,48 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatibale" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home|SweetCrumbs Bakery</title>
+  <title>Home | SweetCrumbs Bakery</title>
   <link rel="stylesheet" href="Home.css" />
   <link rel="icon" type="image/png" href="Images/logoSC.png">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="SweetCrumbs Bakery offers fresh homemade cakes, pastries, breads, and custom desserts made with love and quality ingredients. Order online or visit us today!">
+  <meta name="keywords" content="bakery, cakes, pastries, bread, desserts, SweetCrumbs Bakery, custom cakes, fresh baked goods">
+  <meta name="author" content="SweetCrumbs Bakery">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SweetCrumbs Bakery | Fresh Cakes & Pastries">
+  <meta property="og:description" content="Delicious homemade baked goods crafted daily. Order custom cakes and treats online.">
+  <meta property="og:image" content="Images/logoSC.png">
+  <meta property="og:url" content="https://SweetCrumbsBakery.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SweetCrumbs Bakery">
+  <meta name="twitter:description" content="Freshly baked cakes, pastries, and custom desserts.">
+  <meta name="twitter:image" content="Images/logoSC.png">
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
 </head>
 <body>
-
-   <header>
-  <div class="header-content">
-    <div class="brand">
-      <img src="Images/logoSC.png" alt="Logo" class="logo-img">
-      <div>
-        <div class="brand-name">SweetCrumbs Bakery</div>
-        <div class="tagline">Freshly baked happiness, every day</div>
+  <!-- HEADER -->
+  <header>
+    <div class="header-content">
+      <div class="brand">
+        <img src="Images/logoSC.png" alt="SweetCrumbs Logo" class="logo-img">
+        <div class="brand-text">
+          <div class="brand-name">SweetCrumbs Bakery</div>
+          <div class="tagline">Freshly baked happiness, every day</div>
+        </div>
       </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  </header>
 
   <div class="container">
-    
-   
-
-  
     <!-- HERO -->
     <section class="hero" id="home">
       <div class="hero-card">
         <h1>Welcome to SweetCrumbs Bakery</h1>
-        <p>Freshly baked breads, pastries, and cakes made with love every single day. Come taste the difference.</p>
+        <p>Freshly baked breads, pastries, and cakes made with love every single day. Taste the difference.</p>
         <div class="cta-row">
-         <a href="menu.html" class="btn btn-primary">View Menu</a>
-<a href="menu.html" class="btn btn-ghost">Order Online</a>
-
+          <a href="Menu.html" class="btn btn-primary">View Menu</a>
+          <a href="Menu.html" class="btn btn-ghost">Order Online</a>
         </div>
       </div>
       <aside>
@@ -51,22 +67,21 @@
       </aside>
     </section>
 
-    <!-- Featured products -->
+    <!-- FEATURED PRODUCTS -->
     <section class="section" id="cakes">
       <h2>Our Specials</h2>
       <div class="grid">
         <article class="card">
-  <img src="Images/bc.jpg" alt="Buttery Croissant" class="product-thumb">
-  <div class="card-content">
-    <div class="product-title">Buttery Croissant</div>
-    <div class="product-desc">Flaky and golden</div>
-    <div class="price">R18</div>
-  </div>
-</article>
-
+          <img src="Images/bc.jpg" alt="Buttery Croissant" class="product-thumb">
+          <div class="card-content">
+            <div class="product-title">Buttery Croissant</div>
+            <div class="product-desc">Flaky and golden</div>
+            <div class="price">R18</div>
+          </div>
+        </article>
 
         <article class="card">
-           <img src="Images/vanC.jpeg" alt="vanilla" class="product-thumb">
+          <img src="Images/vanC.jpeg" alt="Vanilla Celebration Cake" class="product-thumb">
           <div class="card-content">
             <div class="product-title">Vanilla Celebration Cake</div>
             <div class="product-desc">Perfect for birthdays</div>
@@ -75,7 +90,7 @@
         </article>
 
         <article class="card">
-          <img src="Images/loaf.jpg" alt="loaf" class="product-thumb">
+          <img src="Images/loaf.jpg" alt="Seeded Loaf" class="product-thumb">
           <div class="card-content">
             <div class="product-title">Seeded Loaf</div>
             <div class="product-desc">Wholesome & hearty</div>
@@ -85,72 +100,111 @@
       </div>
     </section>
 
-
-    <!-- Testimonials Section -->
-<section id="testimonials">
-  <h2>What Our Customers Say</h2>
-  <div class="testimonial-card">
-    <img src="Images/em.jpg" alt="Emily R." class="testimonial-avatar">
-    <p>"The cupcakes are absolutely divine! SweetCrumbs never disappoints." – <strong>Emily R.</strong></p>
-  </div>
-  <div class="testimonial-card">
-    <img src="Images/jo.jpg" alt="John S." class="testimonial-avatar">
-    <p>"I love the friendly service and the quality of their bread is unmatched!" – <strong>John S.</strong></p>
-  </div>
-  <div class="testimonial-card">
-    <img src="Images/soph.jpg" alt="Sophia L." class="testimonial-avatar">
-    <p>"Every cake I've ordered here has been perfect. Highly recommend!" – <strong>Sophia L.</strong></p>
-  </div>
-</section>
-
-
-<footer>
-  <div class="footer-container">
-    <!-- Left: Logo + tagline -->
-    <div class="brand">
-      <img src="Images/logoSC.png" alt="SweetCrumbs Bakery Logo" class="logo-img">
-      <div>
-        <div class="brand-name">SweetCrumbs Bakery</div>
-        <div class="tagline">Freshly baked happiness, every day</div>
+    <!-- WHY CHOOSE US -->
+    <section class="section" id="why-us">
+      <h2>Why Choose SweetCrumbs Bakery?</h2>
+      <div class="grid">
+        <div class="card feature-card">
+          <h3>Freshly Baked</h3>
+          <p>All our cakes, pastries, and breads are made fresh daily with love and care.</p>
+        </div>
+        <div class="card feature-card">
+          <h3>Quality Ingredients</h3>
+          <p>We use only premium ingredients to create delicious, wholesome baked goods.</p>
+        </div>
+        <div class="card feature-card">
+          <h3>Custom Orders</h3>
+          <p>From birthday cakes to special occasions, we create custom desserts just for you.</p>
+        </div>
       </div>
-    </div>
-    <!-- Middle: Quick links -->
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </div>
+    </section>
 
-    <!-- Right: Contact info -->
-    <div class="footer-contact">
-      <h4>Get in Touch</h4>
-      <p>123 Sweet Street, Cape Town</p>
-      <p>📞 (021) 555-1234</p>
-      <p>📧 hello@sweetcrumbs.co.za</p>
-      <div class="socials">
-        <a href="#"><img src="Images/face.png" alt="Facebook"></a>
-        <a href="#"><img src="Images/inst.png" alt="Instagram"></a>
-        
+    <!-- NEWSLETTER -->
+    <section class="section newsletter">
+      <h2>Subscribe for Sweet Deals</h2>
+      <p>Get exclusive offers, recipes, and updates straight to your inbox.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- HIGHLIGHTS / AWARDS -->
+    <section class="section" id="highlights">
+      <h2>Our Highlights</h2>
+      <div class="grid">
+        <div class="card feature-card">
+          <h3>Best Bakery 2024</h3>
+          <p>Voted the best local bakery in Cape Town by the Daily Foodie Awards.</p>
+        </div>
+        <div class="card feature-card">
+          <h3>Custom Cakes Delivered</h3>
+          <p>Over 500 happy customers served with custom cakes last year alone.</p>
+        </div>
+        <div class="card feature-card">
+          <h3>Community Favorite</h3>
+          <p>We proudly support local events and community projects.</p>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-card">
+        <img src="Images/em.jpg" alt="Emily R." class="testimonial-avatar">
+        <p>"The cupcakes are absolutely divine! SweetCrumbs never disappoints." – <strong>Emily R.</strong></p>
+      </div>
+      <div class="testimonial-card">
+        <img src="Images/jo.jpg" alt="John S." class="testimonial-avatar">
+        <p>"I love the friendly service and the quality of their bread is unmatched!" – <strong>John S.</strong></p>
+      </div>
+      <div class="testimonial-card">
+        <img src="Images/soph.jpg" alt="Sophia L." class="testimonial-avatar">
+        <p>"Every cake I've ordered here has been perfect. Highly recommend!" – <strong>Sophia L.</strong></p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="brand">
+          <img src="Images/logoSC.png" alt="SweetCrumbs Logo" class="logo-img">
+          <div class="brand-text">
+            <div class="brand-name">SweetCrumbs Bakery</div>
+            <div class="tagline">Freshly baked happiness, every day</div>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <p>123 Sweet Street, Cape Town</p>
+          <p>📞 (021) 555-1234</p>
+          <p>📧 hello@sweetcrumbs.co.za</p>
+          <div class="socials">
+            <a href="#"><img src="Images/face.png" alt="Facebook" class="social-icon"></a>
+            <a href="#"><img src="Images/inst.png" alt="Instagram" class="social-icon"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 SweetCrumbs Bakery. All Rights Reserved.</p>
+      </div>
+    </footer>
   </div>
 
-  <!-- Bottom bar -->
-  <div class="footer-bottom">
-    <p>© 2025 SweetCrumbs Bakery. All Rights Reserved.</p>
-  </div>
-</footer>
-
-  </div>
-  
-    
-     
   <script src="home.js"></script>
-
-
 </body>
 </html>
+

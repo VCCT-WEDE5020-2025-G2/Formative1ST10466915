@@ -7,6 +7,28 @@
   <title>Menu|SweetCrumbs Bakery</title>
   <link rel="stylesheet" href="menu.css" />
   <link rel="icon" type="image/png" href="Images/logoSC.png">
+      <!-- SEO Meta Tags -->
+  <meta name="description" content="SweetCrumbs Bakery offers fresh homemade cakes, pastries, breads, and custom desserts made with love and quality ingredients. Order online or visit us today!">
+
+  <meta name="keywords" content="bakery, cakes, pastries, bread, desserts, SweetCrumbs Bakery, custom cakes, fresh baked goods">
+
+  <meta name="author" content="SweetCrumbs Bakery">
+
+  <!-- Open Graph for Social Media -->
+  <meta property="og:title" content="SweetCrumbs Bakery | Fresh Cakes & Pastries">
+  <meta property="og:description" content="Delicious homemade baked goods crafted daily. Order custom cakes and treats online.">
+  <meta property="og:image" content="Images/logoSC.png">
+  <meta property="og:url" content="https://SweetCrumbsBakery.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SweetCrumbs Bakery">
+  <meta name="twitter:description" content="Freshly baked cakes, pastries, and custom desserts.">
+  <meta name="twitter:image" content="Images/logoSC.png">
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
 </head>
 <body>
 
@@ -24,7 +46,7 @@
       <ul>
         <li><a href="home.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="menu.html">Menu</a></li>
+        <li><a href="Menu.html">Menu</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
@@ -50,7 +72,6 @@
   <h2>Our Menu</h2>
 
   <!-- Filter Buttons -->
-
   <div class="filter-buttons">
     <button class="filter-btn active" data-filter="all">All</button>
     <button class="filter-btn" data-filter="cakes">Cakes</button>
@@ -59,27 +80,24 @@
   </div>
 
   <!-- Menu Grid -->
-
-<section class="menu-section container">
-  <h2>Our Menu</h2>
   <div class="grid menu-grid">
 
     <!-- Cakes -->
-    <div class="card" data-item="Chocolate Cake" data-price="120">
+    <div class="card cakes" data-item="Chocolate Cake" data-price="120">
       <img src="Images/choc.jpg" alt="Chocolate Cake" class="product-thumb">
       <h3 class="product-title">Chocolate Cake</h3>
       <p class="product-desc">Rich and moist chocolate layers.</p>
       <p class="price">R120</p>
     </div>
 
-    <div class="card" data-item="Vanilla Cake" data-price="110">
+    <div class="card cakes">
       <img src="Images/vanC.jpeg" alt="Vanilla Cake" class="product-thumb">
       <h3 class="product-title">Vanilla Cake</h3>
       <p class="product-desc">Soft and fluffy with creamy frosting.</p>
       <p class="price">R110</p>
     </div>
 
-    <div class="card" data-item="Red Velvet Cake" data-price="130">
+    <div class="card cakes">
       <img src="Images/red.jpg" alt="Red Velvet Cake" class="product-thumb">
       <h3 class="product-title">Red Velvet Cake</h3>
       <p class="product-desc">Classic red velvet with cream cheese.</p>
@@ -87,21 +105,21 @@
     </div>
 
     <!-- Pastries -->
-    <div class="card" data-item="Butter Croissant" data-price="25">
+    <div class="card pastries">
       <img src="Images/bc.jpg" alt="Croissant" class="product-thumb">
       <h3 class="product-title">Butter Croissant</h3>
       <p class="product-desc">Flaky, buttery, fresh from the oven.</p>
       <p class="price">R25</p>
     </div>
 
-    <div class="card" data-item="Cinnamon Roll" data-price="30">
+    <div class="card pastries">
       <img src="Images/cin.jpg" alt="Cinnamon Roll" class="product-thumb">
       <h3 class="product-title">Cinnamon Roll</h3>
       <p class="product-desc">Sweet and soft, with cinnamon swirls.</p>
       <p class="price">R30</p>
     </div>
 
-    <div class="card" data-item="Pain au Chocolat" data-price="28">
+    <div class="card pastries">
       <img src="Images/pain.jpg" alt="Pain au Chocolat" class="product-thumb">
       <h3 class="product-title">Pain au Chocolat</h3>
       <p class="product-desc">Chocolate-filled pastry delight.</p>
@@ -109,28 +127,30 @@
     </div>
 
     <!-- Breads -->
-    <div class="card" data-item="Sourdough Bread" data-price="45">
+    <div class="card breads">
       <img src="Images/sour.jpg" alt="Sourdough" class="product-thumb">
       <h3 class="product-title">Sourdough Bread</h3>
       <p class="product-desc">Crispy crust with soft center.</p>
       <p class="price">R45</p>
     </div>
 
-    <div class="card" data-item="Whole Wheat Loaf" data-price="40">
+    <div class="card breads">
       <img src="Images/whole.jpg" alt="Whole Wheat Bread" class="product-thumb">
       <h3 class="product-title">Whole Wheat Loaf</h3>
       <p class="product-desc">Healthy and hearty for daily meals.</p>
       <p class="price">R40</p>
     </div>
 
-    <div class="card" data-item="Dinner Rolls" data-price="20">
+    <div class="card breads">
       <img src="Images/din.jpg" alt="Dinner Rolls" class="product-thumb">
       <h3 class="product-title">Dinner Rolls</h3>
       <p class="product-desc">Soft and golden, perfect for dinner.</p>
       <p class="price">R20</p>
     </div>
+
   </div>
 </section>
+
 
 
 
@@ -154,7 +174,7 @@
       <ul>
         <li><a href="home.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="menu.html">Menu</a></li>
+        <li><a href="Menu.html">Menu</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
