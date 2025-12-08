@@ -47,6 +47,7 @@
         <li><a href="home.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="Menu.html">Menu</a></li>
+        <li><a href="enquiry.html">Enquire Now</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
@@ -55,14 +56,15 @@
 
   <div class="container">
     
-   <section id="about-hero">
+<section id="about-hero">
   <img src="Images/hero4.jpg" alt="SweetCrumbs Bakery" class="hero-image">
-  <div class="hero-content">
-    <h1>Welcome to SweetCrumbs Bakery</h1>
-    <p>Creating delicious moments with love and passion in every bite.</p>
-   
-  </div>
+<div class="hero-content">
+  <h1>Discover Our Menu</h1>
+  <p>Delicious pastries, cakes, and treats crafted fresh daily for you to enjoy.</p>
+</div>
+
 </section>
+
 
   
 
@@ -71,133 +73,151 @@
 <section class="menu-section">
   <h2>Our Menu</h2>
 
-  <!-- Filter Buttons -->
-  <div class="filter-buttons">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="cakes">Cakes</button>
-    <button class="filter-btn" data-filter="pastries">Pastries</button>
-    <button class="filter-btn" data-filter="breads">Breads</button>
-  </div>
+  <!-- Filter & Search Container -->
+<!-- Filter & Search -->
+    <div class="filter-search-wrapper" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="cakes">Cakes</button>
+        <button class="filter-btn" data-filter="pastries">Pastries</button>
+        <button class="filter-btn" data-filter="breads">Breads</button>
+      </div>
 
-  <!-- Menu Grid -->
-  <div class="grid menu-grid">
-
-    <!-- Cakes -->
-    <div class="card cakes" data-item="Chocolate Cake" data-price="120">
-      <img src="Images/choc.jpg" alt="Chocolate Cake" class="product-thumb">
-      <h3 class="product-title">Chocolate Cake</h3>
-      <p class="product-desc">Rich and moist chocolate layers.</p>
-      <p class="price">R120</p>
+      <div class="search-bar">
+        <input type="text" id="productSearch" placeholder="Search products..." style="padding:8px 12px; border-radius:6px; border:1px solid #ccc;">
+      </div>
     </div>
 
-    <div class="card cakes">
-      <img src="Images/vanC.jpeg" alt="Vanilla Cake" class="product-thumb">
-      <h3 class="product-title">Vanilla Cake</h3>
-      <p class="product-desc">Soft and fluffy with creamy frosting.</p>
-      <p class="price">R110</p>
-    </div>
+    <!-- Menu Grid -->
+    <div class="grid menu-grid">
 
-    <div class="card cakes">
-      <img src="Images/red.jpg" alt="Red Velvet Cake" class="product-thumb">
-      <h3 class="product-title">Red Velvet Cake</h3>
-      <p class="product-desc">Classic red velvet with cream cheese.</p>
-      <p class="price">R130</p>
-    </div>
+      <!-- Cakes -->
+      <div class="card cakes" data-name="Chocolate Cake" data-item="Chocolate Cake" data-price="120">
+        <img src="Images/choc.jpg" alt="Chocolate Cake" class="product-thumb">
+        <h3 class="product-title">Chocolate Cake</h3>
+        <p class="product-desc">Rich and moist chocolate layers.</p>
+        <p class="price">R120</p>
+        <a href="menulanding.html" class="card-button">Add to cart</a>
+      </div>
 
-    <!-- Pastries -->
-    <div class="card pastries">
-      <img src="Images/bc.jpg" alt="Croissant" class="product-thumb">
-      <h3 class="product-title">Butter Croissant</h3>
-      <p class="product-desc">Flaky, buttery, fresh from the oven.</p>
-      <p class="price">R25</p>
-    </div>
+      <div class="card cakes" data-name="Vanilla Cake" data-item="Vanilla Cake" data-price="110">
+        <img src="Images/vanC.jpeg" alt="Vanilla Cake" class="product-thumb">
+        <h3 class="product-title">Vanilla Cake</h3>
+        <p class="product-desc">Soft and fluffy with creamy frosting.</p>
+        <p class="price">R110</p>
+        <a href="menulanding.html" class="card-button">Add to cart</a>
+      </div>
 
-    <div class="card pastries">
-      <img src="Images/cin.jpg" alt="Cinnamon Roll" class="product-thumb">
-      <h3 class="product-title">Cinnamon Roll</h3>
-      <p class="product-desc">Sweet and soft, with cinnamon swirls.</p>
-      <p class="price">R30</p>
-    </div>
+      <div class="card cakes" data-name="Red Velvet Cake" data-item="Red Velvet Cake" data-price="130">
+        <img src="Images/red.jpg" alt="Red Velvet Cake" class="product-thumb">
+        <h3 class="product-title">Red Velvet Cake</h3>
+        <p class="product-desc">Classic red velvet with cream cheese.</p>
+        <p class="price">R130</p>
+        <a href="menulanding.html" class="card-button">Add to cart</a>
+      </div>
 
-    <div class="card pastries">
-      <img src="Images/pain.jpg" alt="Pain au Chocolat" class="product-thumb">
-      <h3 class="product-title">Pain au Chocolat</h3>
-      <p class="product-desc">Chocolate-filled pastry delight.</p>
-      <p class="price">R28</p>
-    </div>
+      <!-- Pastries -->
+      <div class="card pastries" data-name="Butter Croissant" data-item="Butter Croissant" data-price="25">
+        <img src="Images/bc.jpg" alt="Croissant" class="product-thumb">
+        <h3 class="product-title">Butter Croissant</h3>
+        <p class="product-desc">Flaky, buttery, fresh from the oven.</p>
+        <p class="price">R25</p>
+        <a href="menulanding.html" class="card-button">Add to cart</a>
+      </div>
 
-    <!-- Breads -->
-    <div class="card breads">
-      <img src="Images/sour.jpg" alt="Sourdough" class="product-thumb">
-      <h3 class="product-title">Sourdough Bread</h3>
-      <p class="product-desc">Crispy crust with soft center.</p>
-      <p class="price">R45</p>
-    </div>
+      <div class="card pastries" data-name="Cinnamon Roll" data-item="Cinnamon Roll" data-price="30">
+        <img src="Images/cin.jpg" alt="Cinnamon Roll" class="product-thumb">
+        <h3 class="product-title">Cinnamon Roll</h3>
+        <p class="product-desc">Sweet and soft, with cinnamon swirls.</p>
+        <p class="price">R30</p>
+        <a href="menulanding.html" class="card-button">Add to cart</a>
+      </div>
 
-    <div class="card breads">
-      <img src="Images/whole.jpg" alt="Whole Wheat Bread" class="product-thumb">
-      <h3 class="product-title">Whole Wheat Loaf</h3>
-      <p class="product-desc">Healthy and hearty for daily meals.</p>
-      <p class="price">R40</p>
-    </div>
+      <div class="card pastries" data-name="Pain au Chocolat" data-item="Pain au Chocolat" data-price="28">
+        <img src="Images/pain.jpg" alt="Pain au Chocolat" class="product-thumb">
+        <h3 class="product-title">Pain au Chocolat</h3>
+        <p class="product-desc">Chocolate-filled pastry delight.</p>
+        <p class="price">R28</p>
+        <a href="menulanding.html" class="card-button">Add to cart</a>
+      </div>
 
-    <div class="card breads">
-      <img src="Images/din.jpg" alt="Dinner Rolls" class="product-thumb">
-      <h3 class="product-title">Dinner Rolls</h3>
-      <p class="product-desc">Soft and golden, perfect for dinner.</p>
-      <p class="price">R20</p>
-    </div>
+      <!-- Breads -->
+      <div class="card breads" data-name="Sourdough Bread" data-item="Sourdough Bread" data-price="45">
+        <img src="Images/sour.jpg" alt="Sourdough" class="product-thumb">
+        <h3 class="product-title">Sourdough Bread</h3>
+        <p class="product-desc">Crispy crust with soft center.</p>
+        <p class="price">R45</p>
+        <a href="menulanding.html" class="card-button">Add to cart</a>
+      </div>
 
-  </div>
+      <div class="card breads" data-name="Whole Wheat Bread" data-item="Whole Wheat Bread" data-price="40">
+        <img src="Images/whole.jpg" alt="Whole Wheat Bread" class="product-thumb">
+        <h3 class="product-title">Whole Wheat Loaf</h3>
+        <p class="product-desc">Healthy and hearty for daily meals.</p>
+        <p class="price">R40</p>
+        <a href="menulanding.html" class="card-button">Add to cart</a>
+      </div>
+
+      <div class="card breads" data-name="Dinner Rolls" data-item="Dinner Rolls" data-price="20">
+        <img src="Images/din.jpg" alt="Dinner Rolls" class="product-thumb">
+        <h3 class="product-title">Dinner Rolls</h3>
+        <p class="product-desc">Soft and golden, perfect for dinner.</p>
+        <p class="price">R20</p>
+        <a href="menulanding.html" class="card-button">Add to cart</a>
+      </div>
+
+    </div>
+  
+  
 </section>
 
 
 
-
-
-
-
-
-<footer>
-  <div class="footer-container">
-    <!-- Left: Logo + tagline -->
-    <div class="brand">
-      
-      <div>
-        <div class="brand-name">SweetCrumbs Bakery</div>
-        <div class="tagline">Freshly baked happiness, every day</div>
-      </div>
-    </div>
-    <!-- Middle: Quick links -->
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="Menu.html">Menu</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </div>
-
-    <!-- Right: Contact info -->
-    <div class="footer-contact">
-      <h4>Get in Touch</h4>
-      <p>123 Sweet Street, Cape Town</p>
-      <p>📞 (021) 555-1234</p>
-      <p>📧 hello@sweetcrumbs.co.za</p>
-      <div class="socials">
-        <a href="#"><img src="Images/face.png" alt="Facebook"></a>
-        <a href="#"><img src="Images/inst.png" alt="Instagram"></a>
-        
-      </div>
-    </div>
+<!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+  <img src="Images/logoSC.png" alt="SweetCrumbs Logo" class="footer-logo">
+  <div class="footer-brand-text">
+    <div class="brand-name">SweetCrumbs Bakery</div>
+    <div class="tagline">Freshly baked happiness, every day</div>
   </div>
+</div>
 
-  <!-- Bottom bar -->
-  <div class="footer-bottom">
-    <p>© 2025 SweetCrumbs Bakery. All Rights Reserved.</p>
-  </div>
-</footer>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="enquiry.html">Enquire Now</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <p>123 Sweet Street, Cape Town</p>
+          <p>📞 (021) 555-1234</p>
+          <p>📧 hello@sweetcrumbs.co.za</p>
+          <div class="socials">
+            <a href="#"><img src="Images/face.png" alt="Facebook" class="social-icon"></a>
+            <a href="#"><img src="Images/inst.png" alt="Instagram" class="social-icon"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 SweetCrumbs Bakery. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+
+
+
+
+
 
   <script src="menu.js"></script>
 </body>

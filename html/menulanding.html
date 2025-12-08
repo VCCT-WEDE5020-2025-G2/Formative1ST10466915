@@ -5,22 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SweetCrumbs Bakery | Product</title>
   <link rel="stylesheet" href="menulanding.css">
+   <link rel="icon" type="image/png" href="Images/logoSC.png">
+
 </head>
 <body>
 
 
 
 <main class="product-page">
-    <div class="product-display">
+  <div class="product-display">
+    <!-- Product Image -->
+    <div class="product-image-wrapper">
       <img id="productImage" src="" alt="Product Image">
-      <div class="product-info">
-        <h2 id="productTitle"></h2>
-        <p id="productDesc"></p>
-        <p id="productPrice" class="price"></p>
-        <button class="purchase-btn">Purchase</button>
-      </div>
     </div>
-  </main>
+
+    <!-- Product Info + Form -->
+    <div class="product-info">
+      <h2 id="productTitle"></h2>
+      <p id="productDesc"></p>
+      <p id="productPrice" class="price"></p>
+        
+  <a href="menu.html" class="back-btn">← Back to Menu</a>
+
+      <form id="purchaseForm">
+        <div class="quantity-box">
+  <button type="button" class="qty-btn minus">−</button>
+  <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+  <button type="button" class="qty-btn plus">+</button>
+</div>
+
+
+        <label for="buyerName">Name:</label>
+        <input type="text" id="buyerName" name="buyerName" placeholder="Your name" required>
+
+        <label for="buyerEmail">Email:</label>
+        <input type="email" id="buyerEmail" name="buyerEmail" placeholder="Your email" required>
+
+        <button type="submit" class="purchase-btn">Buy Now</button>
+      </form>
+    </div>
+  </div>
+</main>
+
 
 
 

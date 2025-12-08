@@ -1,43 +1,55 @@
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.card');
+// FILTER BUTTONS
+const filterBtns = document.querySelectorAll('.filter-btn');
+const cards = document.querySelectorAll('.card');
 
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      
-      // activate button
-      document.querySelector('.filter-btn.active').classList.remove('active');
-      btn.classList.add('active');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelector('.filter-btn.active').classList.remove('active');
+    btn.classList.add('active');
 
-      const filter = btn.dataset.filter;
+    const filter = btn.dataset.filter;
 
-      cards.forEach(card => {
-        if (filter === "all" || card.classList.contains(filter)) {
-          card.style.display = "block";
-        } else {
-          card.style.display = "none";
-        }
-      });
+    cards.forEach(card => {
+      if (filter === "all" || card.classList.contains(filter)) {
+        card.style.display = "flex";
+      } else {
+        card.style.display = "none";
+      }
     });
   });
+});
 
-    document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('click', () => {
-      const item = card.dataset.item;
-      const price = card.dataset.price;
-      window.location.href = `menulanding.html?item=${encodeURIComponent(item)}&price=${encodeURIComponent(price)}`;
-    });
-  });
+// SEARCH BAR
+const searchInput = document.getElementById('productSearch');
 
-  // When a card is clicked, save its info to localStorage and go to product page
-  document.querySelectorAll(".card").forEach(card => {
-    card.addEventListener("click", () => {
-      const product = {
-        title: card.querySelector(".product-title").textContent,
-        desc: card.querySelector(".product-desc").textContent,
-        price: card.querySelector(".price").textContent,
-        image: card.querySelector("img").getAttribute("src")
-      };
-      localStorage.setItem("selectedProduct", JSON.stringify(product));
-      window.location.href = "menulanding.html";
-    });
+searchInput.addEventListener('input', function() {
+  const query = this.value.toLowerCase();
+
+  cards.forEach(card => {
+    const name = card.dataset.name.toLowerCase();
+    // Only show cards that match the search
+    if (name.includes(query)) {
+      card.style.display = "flex";
+    } else {
+      card.style.display = "none";
+    }
   });
+});
+
+// Ensure Add to Cart button navigates without conflicts
+document.querySelectorAll('.card-button').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation(); // prevents card-level click events
+    // product data can be stored if needed
+    const card = this.closest('.card');
+    const product = {
+      title: card.querySelector('.product-title').textContent,
+      desc: card.querySelector('.product-desc').textContent,
+      price: card.querySelector('.price').textContent,
+      image: card.querySelector('img').getAttribute('src')
+    };
+    localStorage.setItem('selectedProduct', JSON.stringify(product));
+  });
+});
+
+

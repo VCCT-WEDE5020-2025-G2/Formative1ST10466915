@@ -1,32 +1,63 @@
 .product-page {
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 60px 20px;
   background-color: #fff7f3;
 }
 
 .product-display {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
-  align-items: center;
   background: #fff;
-  padding: 40px;
+  padding: 30px;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   max-width: 900px;
   width: 100%;
 }
 
-.product-display img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
+.back-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background-color: #B23A48;
+  color: #FFF8F0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #f59e0b;
+  transform: translateY(-2px);
+}
+
+
+
+/* Product Image */
+.product-image-wrapper {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image-wrapper img {
+  width: 300px;        /* fixed width */
+  height: 300px;       /* fixed height */
+  object-fit: cover;   /* maintain aspect ratio, crop excess */
   border-radius: 12px;
 }
 
+
+/* Product Info + Form */
 .product-info {
-  flex: 1;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .product-info h2 {
@@ -39,6 +70,64 @@
   color: #555;
   margin: 8px 0;
 }
+
+#purchaseForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+#purchaseForm label {
+  font-weight: 600;
+  color: #B23A48;
+}
+
+#purchaseForm input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.quantity-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-box input {
+  width: 60px;
+  height: 45px;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.qty-btn {
+  width: 45px;
+  height: 45px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+  background: #B23A48;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.qty-btn:hover {
+  background: #a12f3f;
+  transform: scale(1.08);
+}
+
+.qty-btn:active {
+  transform: scale(0.95);
+}
+
 
 .purchase-btn {
   background-color: #f59e0b;
@@ -53,4 +142,16 @@
 
 .purchase-btn:hover {
   background-color: #e58900;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-display {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image-wrapper img {
+    max-width: 80%;
+  }
 }

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry | SweetCrumbs Bakery</title>
+  <link rel="stylesheet" href="enquiry.css">
+  <link rel="icon" type="image/png" href="Images/logoSC.png">
+    <!-- SEO Meta Tags -->
+  <meta name="description" content="SweetCrumbs Bakery offers fresh homemade cakes, pastries, breads, and custom desserts made with love and quality ingredients. Order online or visit us today!">
+  <meta name="keywords" content="bakery, cakes, pastries, bread, desserts, SweetCrumbs Bakery, custom cakes, fresh baked goods">
+  <meta name="author" content="SweetCrumbs Bakery">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SweetCrumbs Bakery | Fresh Cakes & Pastries">
+  <meta property="og:description" content="Delicious homemade baked goods crafted daily. Order custom cakes and treats online.">
+  <meta property="og:image" content="Images/logoSC.png">
+  <meta property="og:url" content="https://SweetCrumbsBakery.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SweetCrumbs Bakery">
+  <meta name="twitter:description" content="Freshly baked cakes, pastries, and custom desserts.">
+  <meta name="twitter:image" content="Images/logoSC.png">
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
+
+ 
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+      <div class="brand">
+        <img src="Images/logoSC.png" alt="SweetCrumbs Logo" class="logo-img">
+        <div class="brand-text">
+          <div class="brand-name">SweetCrumbs Bakery</div>
+          <div class="tagline header-tagline">Freshly baked happiness, every day</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="enquiry.html">Enquire Now</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <main>
+      <h1>Make an Enquiry</h1>
+      <form id="enquiryForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="enquiry-type">Enquiry Type</label>
+        <select id="enquiry-type" name="enquiry-type" required>
+          <option value="">-- Select --</option>
+          <option value="product">Product / Cake</option>
+          <option value="service">Service</option>
+          <option value="volunteer">Volunteer</option>
+          <option value="sponsor">Sponsorship</option>
+        </select>
+
+        <label for="quantity">Quantity (if applicable)</label>
+        <input type="number" id="quantity" name="quantity" min="1">
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Tell us more about your enquiry..." required></textarea>
+
+        <button type="submit">Submit Enquiry</button>
+      </form>
+
+      <div id="response" class="response"></div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="brand">
+        <img src="Images/logoSC.png" alt="SweetCrumbs Logo" class="logo-img">
+        <div class="brand-text">
+          <div class="brand-name">SweetCrumbs Bakery</div>
+          <div class="tagline footer-tagline">Freshly baked happiness, every day</div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="enquiry.html">Enquire Now</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Get in Touch</h4>
+        <p>123 Sweet Street, Cape Town</p>
+        <p>📞 (021) 555-1234</p>
+        <p>📧 hello@sweetcrumbs.co.za</p>
+        <div class="socials">
+          <a href="#"><img src="Images/face.png" alt="Facebook"></a>
+          <a href="#"><img src="Images/inst.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 SweetCrumbs Bakery. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+<script src="enquiry.js"></script>
+
+</body>
+</html>
